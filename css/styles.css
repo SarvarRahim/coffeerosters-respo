@@ -58,6 +58,7 @@ body {
   margin: 0;
   font-family: var(--font-stack);
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 img {
