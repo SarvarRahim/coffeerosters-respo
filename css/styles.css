@@ -180,15 +180,27 @@ img {
   }
 
   .collection__title {
+    position: relative;
+    z-index: 1;
     text-align: center;
     margin: 0;
-    margin-right: auto;
-    margin-left: auto;
+    width: 286px;
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 72px;
     text-transform: lowercase;
-    /* background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%); */
-    /* background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent; */
+  }
+
+  .collection__title::before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    content: '';
   }
 
   .coffee__list {
@@ -361,6 +373,10 @@ img {
   }
 
   .works__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -423,7 +439,7 @@ img {
 
   .site-footer {
     padding-top: 120px;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
   }
 
   .site-footer__inner {
@@ -473,6 +489,7 @@ img {
     padding: 0;
     list-style: none;
     margin-top: 50px;
+    padding-bottom: 54px;
   }
 
   .social-icon__item:not(:last-child) {
