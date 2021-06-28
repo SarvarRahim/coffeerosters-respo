@@ -10,18 +10,32 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <div class="site-header__wrapper">
-        <div class="site-head__content">
-          <img class="site-logo" src="img/logo-site-mobil.svg" alt="site logo" width="163" height="18">
+  <div class="container">
+    <header class="site-header">
+      <a class="site-header__link logo" href="index.html">
+        <img class="logo__img" src="img/logo-site-mobil.svg" alt="logo site" width="163" height="18">
+      </a>
+      <button class="site-header__toggler js-site-header__toggler" aria-label="menu"></button>
 
-          <button class="btn__berger js-open-modal" type="button"></button>
-        </div>
-      </div>
-    </div>
-  </header>
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Home</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">About</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Create your plan</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+  </div>
+
+
+  <!-- SITE HERO  -->
   <div class="container">
     <div class="site-hero">
       <h1 class="site-hero__title">Great coffee
@@ -183,34 +197,6 @@
             </div>
           </div>
         </footer>
-
-
-        <div class="modal js-modal">
-          <div class="container">
-            <div class="modal-content">
-              <div class="modal__head">
-                <img class="site-logo" src="img/logo-site-mobil.svg" alt="site logo" width="163" height="18">
-
-                <button class="modal-btn__vector js-close-modal" type="button"></button>
-              </div>
-              <nav class="sitenav">
-                <ul class="sitenav__list">
-                  <li class="sitenav__item">
-                    <a class="sitenav__link" href="#">Home</a>
-                  </li>
-
-                  <li class="sitenav__item">
-                    <a class="sitenav__link" href="#">About us</a>
-                  </li>
-
-                  <li class="sitenav__item">
-                    <a class="sitenav__link" href="#">Create your plane</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
 
         <script src="js/main.js"></script>
       </body>

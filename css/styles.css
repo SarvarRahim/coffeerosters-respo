@@ -90,30 +90,78 @@ img {
 /* SITE HEADER  */
 
 @media only screen and (min-width: 368px) {
+
+  /* SITE HEADER  */
+
   .site-header {
-    padding-top: 34px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
     padding-bottom: 40px;
   }
 
-  .site-head__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  .site-header__link {
+    text-decoration: none;
   }
 
-  .site-logo {
+  .logo__img {
     display: block;
   }
 
-  .btn__berger {
-    display: block;
-    border: none;
+  .site-header__toggler {
+    width: 16px;
+    height: 16px;
+    border: 0;
     background-color: transparent;
     background-image: url("../img/logo-hamburger.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 10px;
   }
+
+  .sitenav {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 90px;
+    height: calc(100vh - 90px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+    background-image: linear-gradient(0, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+    text-align: center;
+  }
+
+  .sitenav--active {
+    display: block;
+  }
+
+  .sitenav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 40px;
+  }
+
+  .sitenav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .sitenav__link {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--color-dark-grey-blue);
+    font-family: var(--font-stack);
+  }
+
+  /* SITE-HERO  */
 
   .site-hero {
     display: flex;
@@ -499,65 +547,53 @@ img {
   .social-icon__link {
     color: var(--color-white);
   }
+}
 
+@media only screen and (min-width: 768px) {
 
-  /* NAVIGATIONS  */
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    background-color: #fff;
-    margin-top: 32px;
-  }
-
-  .modal--active {
-    display: block;
-  }
-
-  .modal__head {
+  .site-header {
+    padding-top: 40px;
+    padding-bottom: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .modal-btn__vector {
-    display: block;
-    border: none;
+  .site-header__toggler {
+    display: none;
     background-color: transparent;
-    background-image: url("../img/vector\ \(7\).svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 10px;
+  }
+
+  .sitenav {
+    display: block;
+    position: static;
+    z-index: 1;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    text-align: end;
+    height: auto;
+    width: auto;
   }
 
   .sitenav__list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
     padding: 0;
-    list-style: none;
-    margin-bottom: -32px;
-    margin-top: 80px;
-    background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
   }
 
-  .sitenav__item {
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
+  .sitenav__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 32px;
   }
 
   .sitenav__link {
-    text-transform: capitalize;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    color: var(--color-dark-grey-blue);
-    font-family: var(--font-stack);
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: var(--color-grey);
+    font-family: var(--font-barlow);
   }
+
 }

@@ -1,11 +1,6 @@
-var elModal = document.querySelector('.modal');
-var elOpenModal = document.querySelector('.js-open-modal');
-var elCloseModal = document.querySelector('.js-close-modal');
+var elOpenHead = document.querySelector('.sitenav');
+var elOpenToggle = document.querySelector('.js-site-header__toggler');
 
-elOpenModal.addEventListener('click', function () {
-  elModal.classList.add('modal--active')
-})
-
-elCloseModal.addEventListener('click', function () {
-  elModal.classList.remove('modal--active')
-})
+elOpenToggle.addEventListener('click', function () {
+  elOpenHead.classList.toggle('sitenav--active')
+});
