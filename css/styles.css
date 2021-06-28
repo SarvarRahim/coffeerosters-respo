@@ -89,7 +89,7 @@ img {
 
 /* SITE HEADER  */
 
-@media only screen and (min-width: 368px) {
+@media only screen and (min-width: 375px) {
 
   /* SITE HEADER  */
 
@@ -549,7 +549,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 670px) {
 
   .site-header {
     padding-top: 40px;
@@ -595,5 +595,37 @@ img {
     color: var(--color-grey);
     font-family: var(--font-barlow);
   }
+
+  /* HERO TABLET SECTION  */
+
+  .site-hero {
+    background-image: url("../img/tablet-hero-bg.png");
+    background-repeat: no-repeat;
+    padding: 58px;
+    padding-top: 104px;
+  }
+
+  .site-hero__wrapper {
+    width: 340px;
+  }
+
+  .site-hero__title {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  .site-hero__text {
+    text-align: left;
+  }
+
+  .site-hero__link {
+    display: inline-block;
+    margin-top: 40px;
+  }
+
+  /* OUR COLLECTION  */
+
+
 
 }
