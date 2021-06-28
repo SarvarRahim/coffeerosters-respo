@@ -57,7 +57,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-stack);
-  background-color: #fff;
+  background-color: var(--color-light-cream);
 }
 
 img {
@@ -127,8 +127,6 @@ img {
     width: 100%;
     top: 90px;
     height: calc(100vh - 90px);
-    margin-left: -20px;
-    margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
     overflow: auto;
@@ -172,10 +170,14 @@ img {
     background-size: cover;
   }
 
+  .site-hero__wrapper {
+    text-align: center;
+  }
+
   .site-hero__title {
     margin: 0;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 39px;
     line-height: 40px;
     text-align: center;
     color: var(--color-light-cream);
@@ -194,7 +196,7 @@ img {
   }
 
   .btn {
-    /* display: inline-block; */
+    display: inline-block;
     text-decoration: none;
     font-weight: 900;
     font-size: 18px;
@@ -208,8 +210,6 @@ img {
     background-color: var(--color-dark-cyan);
     padding: 15px 30px;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
     transition: background-color 0.3s ease;
   }
 
@@ -334,7 +334,7 @@ img {
     text-align: center;
     color: var(--color-light-cream);
     font-family: var(--font-barlow);
-    opacity: 0.8;
+    opacity: 1;
     margin-top: 24px;
   }
 
@@ -398,7 +398,7 @@ img {
     font-size: 15px;
     line-height: 25px;
     text-align: center;
-    color: var(--color-pale-orange);
+    color: var(--color-light-cream);
     font-family: var(--font-barlow);
     margin-top: 24px;
   }
@@ -434,10 +434,6 @@ img {
   .works__item {
     width: 327px;
     margin-bottom: 55px;
-  }
-
-  .works__item:last-child {
-    margin-bottom: 80px;
   }
 
   .works__steps {
@@ -481,6 +477,7 @@ img {
     border-radius: 6px;
     color: var(--color-light-cream);
     margin: 0 auto;
+    margin-top: 80px;
   }
 
   /* FOOTER SITE  */
