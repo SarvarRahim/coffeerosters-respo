@@ -545,7 +545,11 @@ img {
   }
 }
 
-@media only screen and (min-width: 670px) {
+@media only screen and (min-width: 750px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
   .container {
     padding-left: 40px;
@@ -732,6 +736,85 @@ img {
     margin-right: 55px;
   }
 
+
+  /* WORK SECTO=ION  */
+
+  .works {
+    padding-top: 460px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .works__head {
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+  .works__head::after {
+    position: absolute;
+    z-index: -1;
+    top: 550px;
+    left: 50px;
+    content: "";
+    width: 470px;
+    height: 2px;
+    background-color: var(--color-pale-orange);
+  }
+
+  .works__list {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .works__item {
+    width: 100%;
+    flex-shrink: 1;
+    margin-right: 10px;
+  }
+
+  .works__item::before {
+    display: block;
+    content: "";
+    width: 31px;
+    height: 31px;
+    border: 2px solid #0E8784;
+    background-color: var(--color-light-cream);
+    border-radius: 50%;
+    margin-bottom: 48px;
+  }
+
+  .works__steps {
+    align-items: flex-start;
+  }
+
+  .works__title {
+    text-align: left;
+  }
+
+  .works__desc {
+    text-align: left;
+  }
+
+  .plans__link {
+    margin: 0;
+    margin-top: 44px;
+  }
+
+  /* FOOTER  */
+
+  .sitenav__list--footer {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 65px;
+  }
+
+  .sitenav__item--footer {
+    margin: 0;
+    margin-left: 33px;
+  }
+
 }
 
 
@@ -861,4 +944,47 @@ img {
   .cards__info {
     text-align: center;
   }
+
+  /* WORKS SECTION  */
+
+  .works__head::after {
+    width: 780px;
+  }
+
+  .works__item {
+    width: 285px;
+    margin-right: 95px;
+    flex-grow: 1;
+  }
+
+  /* FOOTER SECTION  */
+
+
+  .site-footer__inner {
+    display: flex;
+    align-items: center;
+    padding: 47px 85px;
+  }
+
+  .site-logo__wrapper--footer {
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+  }
+
+  .sitenav__list--footer {
+    margin: 0;
+  }
+
+  .sitenav__link--footer {
+    white-space: nowrap;
+  }
+
+  .social-icon__list {
+    margin: 0;
+    padding: 0;
+    margin-left: 300px;
+  }
+
+  
 }
