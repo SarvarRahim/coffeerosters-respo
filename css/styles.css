@@ -620,6 +620,7 @@ img {
     padding-bottom: 60px;
     padding-left: 24px;
     padding-right: 24px;
+    border-radius: 10px;
   }
 
   .quality-content {
