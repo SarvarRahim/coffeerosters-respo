@@ -833,6 +833,8 @@ img {
 
 .faq-order {
   padding: 32px 24px;
+  background-color: #293039FF;
+  border-radius: 8px;
 }
 
 .faq-order__title {
@@ -846,7 +848,27 @@ img {
 }
 
 .faq-order__text {
-  
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--color-white);
+}
+
+.faq-submit__btn--box {
+  text-align: center;
+  margin-top: 56px;
+}
+
+.faq-button__sbm {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 15px 35px;
+  background-color: var(--color-dark-cyan);
+  border: none;
+  border-radius: 6px;
+  color: var(--color-light-cream);
+  cursor: pointer;
 }
 
   @media
@@ -1263,6 +1285,21 @@ img {
       background-color: transparent;
     }
 
+    /* FAQ FORM SECTION TABLET  */
+
+    .faq-form {
+      display: flex;
+    }
+
+    .faq__header {
+      margin-bottom: 40px;
+    }
+
+    .faq-form__group {
+      padding: 32px 25px 84px 25px;
+      margin-right: 10px;
+    }
+
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min--moz-device-pixel-ratio: 2),
@@ -1536,6 +1573,61 @@ img {
         line-height: 26px;
         margin-top: 26px;
       }
+
+      @media only screen and (min-width: 1110px) {
+        /* FAQ SECTION DESKTOP  */
+
+
+      .faq {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .navigation__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: -24px;
+      }
+
+      .navigation__item {
+        margin-bottom: 24px;
+      }
+
+      .navigation__item::after {
+        display: block;
+        content: "";
+        width: 255px;
+        height: 1px;
+        background-color: var(--color-grey);
+      }
+
+      .navigation__link {
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--color-dark-grey-blue);
+      }
+
+      .faq__inner {
+        width: 730px;
+        margin-left: auto;
+        margin-bottom: 88px;
+      }
+
+
+      .faq-order {
+        width: 730px;
+      }
+
+      .faq-submit__btn--box {
+        margin-left: auto;
+      }
+
+      }
+
 
       @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
