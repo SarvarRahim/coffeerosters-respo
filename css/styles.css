@@ -724,6 +724,131 @@ img {
     margin-top: 22px;
   }
 
+
+  /* CREATE YOUR PLANE  */
+
+  /* SITE HERO  */
+
+  .plan-site-hero {
+    padding: 100px 24px 136px 24px;
+    background-image: url("../img/plan-hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .plan-site-hero__wrapper {
+    text-align: center;
+  }
+
+  .plan-site-hero__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--color-light-cream);
+  }
+
+  .plan-site-hero__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 22px;
+    color: var(--color-light-cream);
+    opacity: 0.8;
+    font-family: var(--font-barlow);
+  }
+
+  /* FEATURES SECTION  */
+
+  .works {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #2C343E;
+    border-radius: 10px;
+    margin-top: 120px;
+  }
+
+ .works__title {
+   color: var(--color-light-cream);
+ }
+
+ .works__desc {
+   color: var(--color-light-cream);
+ }
+
+ /* FAQ PAGE  */
+
+ .faq {
+   padding-top: 120px;
+   padding-bottom: 120px;
+ }
+
+ .faq__header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 32px;
+ }
+
+ .faq__question {
+   margin: 0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-grey);
+  margin-right: 70px;
+ }
+
+ .faq__btn {
+   background-color: transparent;
+   border: none;
+   width: 18px;
+   height: 12px;
+   background-image: url("../img/arrow-bottom.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+ }
+
+ /* FORM  */
+
+ .faq__inner {
+   margin-bottom: 96px;
+ }
+
+ .faq-form__group {
+   /* display: none; */
+   background-color: #F4F1EB;
+   border-radius: 8px;
+   padding: 25px;
+   margin-bottom: 16px;
+ }
+
+.faq-label__coffe__desc {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-dark-grey-blue);
+  font-family: var(--font-barlow);
+  margin-top: 8px;
+}
+
+.faq-order {
+  padding: 32px 24px;
+}
+
+.faq-order__title {
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-grey);
+  font-family: var(--font-barlow);
+}
+
+.faq-order__text {
+  
+}
+
   @media
   only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -733,6 +858,9 @@ img {
   only screen and (min-resolution: 2dppx) {
     .about-site-hero {
       background-image: url("../img/aboutus-hero-mobile-bg@2x.jpg");
+    }
+    .plan-site-hero {
+      background-image: url("../img/plan-hero-bg@2x.jpg");
     }
   }
 
@@ -1093,6 +1221,48 @@ img {
       font-size: 24px;
     }
 
+    /* CREATE PLAN PAGE  */
+
+    /* HERO SECTION  */
+
+    .plan-site-hero {
+      padding: 127px 58px;
+      background-image: url("../img/plpan-hero-bg-tablet.jpg");
+      border-radius: 8px;
+    }
+
+    .plan-site-hero__wrapper {
+      width: 400px;
+      text-align: left;
+    }
+
+    .plan-site-hero__title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    .plan-site-hero__text {
+      margin-top: 24px;
+    }
+
+    /* FEATURES SECTION  */
+
+    .works {
+      padding: 97px 40px 70px 40px;
+    }
+
+    .works__list {
+      color: aliceblue;
+    }
+
+    .works__item {
+      z-index: 1;
+    }
+
+    .works__item {
+      background-color: transparent;
+    }
+
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min--moz-device-pixel-ratio: 2),
@@ -1102,6 +1272,7 @@ img {
     only screen and (min-resolution: 2dppx) {
       .about-site-hero {
         background-image: url("../img/about-bg-her-tablet@2x.jpg");
+        background-image: url("../img/plpan-hero-bg-tablet@2x.jpg");
       }
     }
 
@@ -1340,6 +1511,42 @@ img {
       .headquarters__counter {
         font-size: 32px;
         line-height: 36px;
+      }
+
+      /* PLAN PAGE  */
+
+      /* hero section  */
+
+      .plan-site-hero {
+        padding: 134px 85px;
+        background-image: url("../img/plan-hero-bg-ddesktop.jpg");
+      }
+
+      .plan-site-hero__wrapper {
+        width: 486px;
+      }
+
+      .plan-site-hero__title {
+        font-size: 72px;
+        line-height: 72px;
+      }
+
+      .plan-site-hero__text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 26px;
+      }
+
+      @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+      .plan-site-hero {
+        background-image: url("../img/plan-hero-bg-ddesktop@2x.jpg");
+      }
       }
     }
   }
