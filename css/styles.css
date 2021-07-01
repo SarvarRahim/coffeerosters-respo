@@ -821,6 +821,15 @@ img {
    border-radius: 8px;
    padding: 25px;
    margin-bottom: 16px;
+   transition: background-color 0.3s ease;
+ }
+
+ .faq-form__group:hover {
+   background-color: #FDD6BA;
+ }
+
+ .faq-input__answer:checked ~ .faq-form__group {
+   background-color: green;
  }
 
 .faq-label__coffe__desc {
@@ -1300,6 +1309,7 @@ img {
       margin-right: 10px;
     }
 
+
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min--moz-device-pixel-ratio: 2),
@@ -1622,7 +1632,17 @@ img {
         width: 730px;
       }
 
+      .faq-button__sbm:hover {
+        opacity: 0.6;
+      }
+
       .faq-submit__btn--box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .faq-footer__wrapper {
         margin-left: auto;
       }
 
